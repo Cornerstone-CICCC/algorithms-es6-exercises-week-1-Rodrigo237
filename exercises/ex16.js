@@ -35,3 +35,13 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+function buildTriangle(sides){
+      let triangle = ""
+      for(let i = 0 ; i<= sides;i++){
+        triangle += makeLine(i)
+      }
+      return triangle
+}
+
+console.log(buildTriangle(10))
